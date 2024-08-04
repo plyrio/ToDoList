@@ -1,0 +1,9 @@
+modules = ["nodejs-20"]
+run = "npm run dev"
+[[ports]]
+localPort = 5173
+externalPort = 80
+exposeLocalhost = true
+
+[deployment]
+run = ["sh", "-c", "npm run dev"]
