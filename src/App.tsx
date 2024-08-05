@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 function App() {
   const [todoList, setTodoList] = useState<any>([]);
   const [todo, setTodo] = useState<any>({});
-  const API_URL = import.meta.env.REACT_APP_API_URL
+  const API_URL = import.meta.env.VITE_API_URL
 
   useEffect(() => {
     obterTodo();
